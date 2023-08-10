@@ -10,10 +10,17 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // You can delay the actual appearance of the main screen to simulate a splash screen.
+        // For instance, you could delay the transition to your main view controller.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { // Delay for 2 seconds
+            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        }
+        
         return true
     }
 
@@ -31,6 +38,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
 }
-
