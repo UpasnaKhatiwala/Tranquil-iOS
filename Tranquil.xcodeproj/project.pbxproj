@@ -18,6 +18,10 @@
 		16D7AE9929E6603500EC2FA9 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D7AE9829E6603500EC2FA9 /* OTPViewController.swift */; };
 		16D7AE9B29E664D800EC2FA9 /* FeelingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D7AE9A29E664D800EC2FA9 /* FeelingViewController.swift */; };
 		16D7AE9D29E66B4400EC2FA9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D7AE9C29E66B4400EC2FA9 /* ResultViewController.swift */; };
+		95A4BDEA2A84598100C22048 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4BDE92A84598100C22048 /* EntryViewController.swift */; };
+		95A4BDEC2A845C4F00C22048 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4BDEB2A845C4F00C22048 /* DashboardViewController.swift */; };
+		95A4BDEE2A84675F00C22048 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4BDED2A84675F00C22048 /* JournalViewController.swift */; };
+		95A4BDF02A847CD400C22048 /* JournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4BDEF2A847CD400C22048 /* JournalEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		16D7AE9829E6603500EC2FA9 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		16D7AE9A29E664D800EC2FA9 /* FeelingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingViewController.swift; sourceTree = "<group>"; };
 		16D7AE9C29E66B4400EC2FA9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		95A4BDE92A84598100C22048 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		95A4BDEB2A845C4F00C22048 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		95A4BDED2A84675F00C22048 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		95A4BDEF2A847CD400C22048 /* JournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,10 @@
 				16D7AE9829E6603500EC2FA9 /* OTPViewController.swift */,
 				16D7AE9A29E664D800EC2FA9 /* FeelingViewController.swift */,
 				16D7AE9C29E66B4400EC2FA9 /* ResultViewController.swift */,
+				95A4BDE92A84598100C22048 /* EntryViewController.swift */,
+				95A4BDEB2A845C4F00C22048 /* DashboardViewController.swift */,
+				95A4BDED2A84675F00C22048 /* JournalViewController.swift */,
+				95A4BDEF2A847CD400C22048 /* JournalEntryViewController.swift */,
 			);
 			path = Tranquil;
 			sourceTree = "<group>";
@@ -154,11 +166,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D7AE9929E6603500EC2FA9 /* OTPViewController.swift in Sources */,
+				95A4BDEA2A84598100C22048 /* EntryViewController.swift in Sources */,
+				95A4BDF02A847CD400C22048 /* JournalEntryViewController.swift in Sources */,
 				16D7AE8329E64FD600EC2FA9 /* ViewController.swift in Sources */,
 				16D7AE9B29E664D800EC2FA9 /* FeelingViewController.swift in Sources */,
+				95A4BDEE2A84675F00C22048 /* JournalViewController.swift in Sources */,
 				16D7AE9D29E66B4400EC2FA9 /* ResultViewController.swift in Sources */,
 				16D7AE9529E659F100EC2FA9 /* UserInformation.swift in Sources */,
 				16D7AE7F29E64FD600EC2FA9 /* AppDelegate.swift in Sources */,
+				95A4BDEC2A845C4F00C22048 /* DashboardViewController.swift in Sources */,
 				16D7AE9729E65D1D00EC2FA9 /* LoginViewController.swift in Sources */,
 				16D7AE8129E64FD600EC2FA9 /* SceneDelegate.swift in Sources */,
 			);
