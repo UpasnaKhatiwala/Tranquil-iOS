@@ -408,12 +408,12 @@
         <scene sceneID="xtA-FL-eMS">
             <objects>
                 <viewController id="VvU-qb-vLC" customClass="ResultViewController" customModule="Tranquil" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s0n-jj-jGZ">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="s0n-jj-jGZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aTq-p7-fP2">
-                                <rect key="frame" x="16" y="0.0" width="361" height="818"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aTq-p7-fP2">
+                                <rect key="frame" x="16" y="37" width="361" height="711"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -442,17 +442,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hn8-U0-Qv6">
-                                                    <rect key="frame" x="122" y="540" width="116" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="77" id="IQ0-sK-ys7"/>
-                                                    </constraints>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Okay"/>
-                                                    <connections>
-                                                        <segue destination="EX6-eM-WmO" kind="show" id="Tnr-mL-zjB"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -467,9 +456,30 @@
                                     <outlet property="delegate" destination="VvU-qb-vLC" id="uIl-zk-vUY"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hn8-U0-Qv6">
+                                <rect key="frame" x="109" y="756" width="200" height="77"/>
+                                <rect key="contentStretch" x="0.40000000000000002" y="0.5" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="IQ0-sK-ys7"/>
+                                    <constraint firstAttribute="width" constant="200" id="olF-l9-yal"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ouh-ko-3za"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Okay"/>
+                                <connections>
+                                    <segue destination="EX6-eM-WmO" kind="show" id="Tnr-mL-zjB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="14D-PY-SAl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hn8-U0-Qv6" firstAttribute="top" secondItem="s0n-jj-jGZ" secondAttribute="top" constant="756" id="193-p9-fCk"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="hn8-U0-Qv6" secondAttribute="bottom" id="CEe-i5-16p"/>
+                            <constraint firstItem="hn8-U0-Qv6" firstAttribute="top" secondItem="aTq-p7-fP2" secondAttribute="bottom" constant="653" id="QcF-5A-425"/>
+                            <constraint firstItem="hn8-U0-Qv6" firstAttribute="leading" secondItem="s0n-jj-jGZ" secondAttribute="leading" constant="109" id="etS-lT-dPT"/>
+                            <constraint firstAttribute="bottom" secondItem="hn8-U0-Qv6" secondAttribute="bottom" constant="27" id="tZA-YM-gtD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GUC-yd-KNO"/>
                     <connections>
